@@ -22,6 +22,6 @@ classDiagram
         +int estrelas
     }
 
-    Cliente "1" -- "0..*" Livro : possui
-    Livro "1" -- "0..*" Avaliacao : tem
+    Cliente "1" -- "0..*" Livro
+    Livro "1" -- "0..*" Avaliacao
 ```
