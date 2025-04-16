@@ -29,4 +29,11 @@ public class LivroServiceImp implements LivroService {
 		return livroRepository.save(novoLivro);
 	}
 
+	@Override
+	public void deleteById(int id) {
+		if (!livroRepository.existsById(id))
+			throw new NoSuchElementException();
+		livroRepository.deleteById(id);
+	}
+
 }
