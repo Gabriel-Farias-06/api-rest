@@ -7,7 +7,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HomeController {
     @GetMapping("/")
-    public ResponseEntity<String> inicialPage() {
-        return ResponseEntity.ok("API REST Iniciada com Sucesso!");
+    public String health() {
+        return "API Online";
+    }
+
+    @GetMapping("/health")
+    public ResponseEntity<String> healthCheck() {
+        return ResponseEntity.ok("OK");
     }
 }
