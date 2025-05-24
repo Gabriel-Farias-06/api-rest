@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:postgresql://maglev.proxy.rlwy.net:23952/${PGDATABASE}
+    url: jdbc:postgresql://maglev.trolley.rlwy.net:25706/${PGDATABASE}
     username: ${PGUSER}
     password: ${PGPASSWORD}
     driver-class-name: org.postgresql.Driver
