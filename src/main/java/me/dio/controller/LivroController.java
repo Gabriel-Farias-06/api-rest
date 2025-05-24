@@ -32,4 +32,10 @@ public class LivroController {
 				toUri();
 		 return ResponseEntity.created(localizacao).body(livroCriado);
 	}
+
+	@DeleteMapping("/{id}")
+	public ResponseEntity<Boolean> deleteById(@PathVariable int id) {
+		livroService.deleteById(id);
+		return ResponseEntity.ok(true);
+	}
 }
